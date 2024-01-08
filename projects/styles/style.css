@@ -166,21 +166,6 @@ img {
     color: #000000;
 }
 
-@media (hover: hover) {
-    .home-panel:hover {
-        transform: scale(.8);
-    }
-
-    .home-panel-closes:hover {
-        transform: scale(.8);
-    }
-
-    .list-menu a:hover {
-        border-left: 2px solid #000000;
-        padding-left: 10px;
-    }
-}
-
 .header-title {
     margin-top: 334px;
     text-align: center;
@@ -198,59 +183,12 @@ img {
 }
 
 .section {
+    margin-top: 80px;
     color: #000000;
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.about-home {
-    margin: 60px 0;
-    width: 560px;
-    height: 184px;
-}
-
-.about-home-title {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.about-home-text {
-    margin-top: 20px;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.skills-home {
-    margin-bottom: 100px;
-    width: 560px;
-    height: 98px;
-}
-
-.skills-home-title {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.my-skills {
-    margin-top: 22px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.skills-home-content {
-    display: flex;
-    align-items: center;
-    margin: 0 48px 16px 0;
-    gap: 5px;
-}
-
-.skills-home-text {
-    font-size: 16px;
-    font-weight: 400;
 }
 
 .projects-home {
@@ -278,7 +216,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
 }
 
 .btn {
@@ -592,54 +529,6 @@ img {
         align-items: center;
     }
     
-    .about-home {
-        margin: 60px 0;
-        width: 298px;
-        height: 290px;
-    }
-    
-    .about-home-title {
-        font-family: 'League Spartan', sans-serif;
-        font-size: 24px;
-        font-weight: 700;
-    }
-    
-    .about-home-text {
-        margin-top: 20px;
-        font-size: 16px;
-        font-weight: 400;
-    }
-    
-    .skills-home {
-        margin-bottom: 60px;
-        width: 298px;
-        height: 180px;
-    }
-    
-    .skills-home-title {
-        font-family: 'League Spartan', sans-serif;
-        font-size: 24px;
-        font-weight: 700;
-    }
-    
-    .my-skills {
-        margin-top: 22px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .skills-home-content {
-        display: flex;
-        align-items: center;
-        margin: 0 51px 10px 0;
-        gap: 5px;
-    }
-    
-    .skills-home-text {
-        font-size: 16px;
-        font-weight: 400;
-    }
-    
     .projects-home {
         max-width: 298px;
         display: flex;
@@ -666,7 +555,6 @@ img {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 50px;
     }
     
     .btn {

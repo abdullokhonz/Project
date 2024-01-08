@@ -1,11 +1,1 @@
-var openPanel = document.getElementById('home-panel');
-var navMenu = document.getElementById('menu');
-var closePanel = document.getElementById('home-panel-closes');
-openPanel.addEventListener('click', () => {
-    navMenu.classList.remove('closeMenu');
-    navMenu.classList.add('openMenu');
-});
-closePanel.addEventListener('click', () => {
-    navMenu.classList.remove('openMenu');
-    navMenu.classList.add('closeMenu');
-});
+var _0x157889=_0x288a;(function(_0xfcb422,_0x4fc4c4){var _0x31f78f=_0x288a,_0x19b516=_0xfcb422();while(!![]){try{var _0x19d2f5=-parseInt(_0x31f78f(0xf9))/0x1+-parseInt(_0x31f78f(0x100))/0x2*(-parseInt(_0x31f78f(0xfd))/0x3)+-parseInt(_0x31f78f(0xf6))/0x4+parseInt(_0x31f78f(0x105))/0x5+parseInt(_0x31f78f(0xf7))/0x6+parseInt(_0x31f78f(0x101))/0x7*(-parseInt(_0x31f78f(0xfe))/0x8)+parseInt(_0x31f78f(0x103))/0x9;if(_0x19d2f5===_0x4fc4c4)break;else _0x19b516['push'](_0x19b516['shift']());}catch(_0x5d19bc){_0x19b516['push'](_0x19b516['shift']());}}}(_0x2332,0x49150));var openPanel=document[_0x157889(0x107)]('home-panel'),navMenu=document['getElementById'](_0x157889(0xfb)),closePanel=document[_0x157889(0x107)](_0x157889(0xfa));openPanel[_0x157889(0x104)](_0x157889(0xf8),()=>{var _0x42cc21=_0x157889;navMenu['classList'][_0x42cc21(0xfc)](_0x42cc21(0x108)),navMenu['classList'][_0x42cc21(0x102)](_0x42cc21(0x106));}),closePanel[_0x157889(0x104)](_0x157889(0xf8),()=>{var _0x2e7e5b=_0x157889;navMenu['classList'][_0x2e7e5b(0xfc)]('openMenu'),navMenu[_0x2e7e5b(0xff)][_0x2e7e5b(0x102)](_0x2e7e5b(0x108));});function _0x288a(_0x4e9c71,_0x574274){var _0x233238=_0x2332();return _0x288a=function(_0x288aec,_0x5d8346){_0x288aec=_0x288aec-0xf6;var _0x5ebafb=_0x233238[_0x288aec];return _0x5ebafb;},_0x288a(_0x4e9c71,_0x574274);}function _0x2332(){var _0x4d517b=['addEventListener','2746290ETaPhz','openMenu','getElementById','closeMenu','1112040UXfAyx','1235262flemXx','click','550153vqxiKN','home-panel-closes','menu','remove','243KMRvbF','1511464gTwkSy','classList','4374RPaZpD','14OURgnd','add','5157819xvzhWV'];_0x2332=function(){return _0x4d517b;};return _0x2332();}
