@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="../images/rpLogoBlack.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="home-banner">
+
+        <div class="home-icon">
+            <img src="../images/rpLogoWhite.svg" alt="logo">
+        </div>
+
+        <div class="home-panel" id="home-panel">
+            <img src="../images/3_white.svg" alt="menu_burger">
+        </div>
+
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="home-panel-closes" id="home-panel-closes">
+            <img src="../images/X_white.svg" alt="x">
+        </div>
+        <div class="menu-title">
+            <img src="../images/rpLogoBlack.svg" alt="logo">
+            Portfolio
+        </div>
+        <div class="list-menu">
+            <ul>
+                <li><a href="../project_home/index.html">Home</a></li>
+                <li><a href="../projects/index.html">Projects</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="../index.html">Exit</a></li>
+            </ul>
+        </div>
+        <div class="menu-footer"><span>Created by: </span> @iLLustrator_15</div>
+    </div>
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="header-conent">
+                <div class="header-title">CONTACT ME</div>
+                <div class="header-text">SAY HELLO TO ME</div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="about-home-title">
+                Contact me
+            </div>
+    
+            <form class="form" action="scripts/script.php" method="post">
+                    <label class="label" for="name">
+                        <span class="label-text" id="label-name">Name</span>
+                        <input type="text" placeholder="Your name" id="name" name="name" required>
+                    </label>
+                    <label class="label" for="email">
+                        <span class="label-text" id="label-email">Email</span>
+                        <input type="email" placeholder="email@example.com" id="email" name="email" required>
+                    </label>
+                    <label class="label label-last" for="sms">
+                        <span class="label-text" id="textSms">Message</span>
+                        <input type="text" placeholder="Hello, my name is . . ." id="sms" name="sms" required>
+                    </label>
+                    <div class="btns">
+                        <button class="btn" type="submit" id="btn" value="Send">Send message</button>
+                    </div>
+                    
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-frame">
+                    <div class="frame"><a href="../project_home/index.html">HOME</a></div>
+                    <div class="frame"><a href="../projects/index.html">PROJECTS</a></div>
+                    <div class="frame"><a href="../about/index.html">ABOUT</a></div>
+                </div>
+
+                <div class="footer-title">
+                    <div class="footer-logo"><img src="../images/rpLogoWhite.svg" alt="logo"></div>
+                    <div class="footer-texts">
+                        <div class="footer-text"><a href="#">abdullokhon1206@gmail.com</a></div>
+                        <div class="footer-text"><a href="tel: +992 92 744 8854">+992 92 744 8854</a></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    
+    <script src="scripts/contact.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+    <script>new Snowflakes();</script>
+
+</body>
+</html>
