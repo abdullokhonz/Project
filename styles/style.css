@@ -1,1 +1,386 @@
-@keyframes opens{0%{margin-top:12px;opacity:0}to{margin-top:0;opacity:1}}@keyframes openMenu{0%{right:-310px}to{right:0}}@keyframes closeMenu{0%{right:0}to{right:-310px}}*{margin:0;padding:0;color:#000;list-style:none;text-decoration:none;box-sizing:border-box;font-family:'League Spartan',sans-serif;line-height:normal}::selection{background-color:red}body{background-color:#fff;animation:opens .5s linear;opacity:1}img{user-select:none}.home{box-sizing:border-box}.container{max-width:1440px;height:100%;margin:0 auto;overflow:hidden}.home-banner{max-width:1200px;height:80px;display:flex;justify-content:space-between;margin:0 120px}.home-icon{width:80px;height:80px;margin-top:60px}.home-panel{width:35px;height:23px;margin-top:89px;cursor:pointer;transition:all .1s linear}.menu{width:315px;position:fixed;top:0;right:-310px;float:right;padding:25vh 50px;background:rgba(20,20,20,.5);height:100vh;backdrop-filter:blur(16px);border-left:#000 solid 8px;z-index:999}.openMenu{right:0;animation:openMenu .2s linear}.home-panel-closes{position:fixed;top:0;right:0;margin:60px 50px 0 0;cursor:pointer;transition:all .1s linear}.closeMenu{right:-310px;transition:all .2s linear}.menu-title{color:#fff;font-size:45px;font-weight:700;border-bottom:2px solid #000}.menu-title img{width:28px;height:28px}.list-menu,.menu-title{margin-bottom:50px}.list-menu li{margin:25px 0}.list-menu a{font-size:25px;font-weight:600;border-left:2px solid #fff;padding-left:5px;transition:all .1s linear}.menu-footer{border-top:2px solid #fff;color:#fff;padding-top:10px;font-size:15px;font-weight:500;user-select:none;transition:all .1s linear}.home-content{max-width:1200px;max-height:302px;margin:112px 268px;display:flex;justify-content:space-between;align-items:center}.home-title{width:347px;height:302px;display:flex;justify-content:center;align-items:start;gap:33px}.home-text-menu{height:22px;margin-top:42px;writing-mode:vertical-rl;transform:rotate(-180deg);font-size:24px;font-weight:500}.home-text{width:292px;height:53px;font-size:64px;font-weight:700;margin-top:30px}.home-text:first-child{margin:0}.home-contact{width:305px;height:118px}.home-contact a{font-size:24px;font-weight:600}.home-email,.home-phone{transition:all .1s linear}.home-email{margin-top:30px}.home-phone{margin:20px 0 30px}.home-sm img{width:32px;height:32px;margin-right:20px;transition:all .1s linear}@media (hover:hover){.home-panel-closes:hover,.home-panel:hover,.home-sm img:hover{transform:scale(.8)}.home-email:hover,.home-phone:hover,.list-menu a:hover{border-left:2px solid #000;padding-left:10px}}@media screen and (max-width:1300px){.home-content{max-width:1200px;max-height:500px;margin:112px 268px;display:flex;flex-direction:column;align-items:center;gap:92px}}@media screen and (max-width:800px){.home-banner{max-width:1400px;height:40px;display:flex;justify-content:space-between;margin:0 37px}.home-icon{width:40px;height:40px;margin-top:20px}.home-panel{width:31.25px;height:20px;margin-top:26px;cursor:initial;transition:all .1s linear}.menu{width:275px;position:fixed;top:0;right:-268px;float:right;padding:25vh 30px;background:rgba(20,20,20,.5);height:100vh;backdrop-filter:blur(16px);border-left:#000 solid 8px;z-index:999}.openMenu{right:0;animation:openMenu .2s linear}@keyframes openMenu{0%{right:-268px}to{right:0}}.home-panel-closes{position:fixed;top:0;right:0;margin:26px 37px 0 0;cursor:initial}.closeMenu{right:-268px;transition:all .2s linear}@keyframes closeMenu{0%{right:0}to{right:-268px}}.home-content{max-width:900px;max-height:600px;margin:60px 0 0;display:flex;flex-direction:column;align-items:center;gap:92px}.home-title{width:314px;height:262px;margin:0 37px;display:flex;justify-content:center;align-items:start;gap:6px}.home-text{width:234px;height:46px;font-size:46px;font-weight:700;margin-top:26px}.home-contact{width:250px;height:218px}.home-contact a{font-size:20px;font-weight:600}.home-sm img{width:25.7px;height:25.7px;margin-right:20px;transition:all .1s linear}}
+* {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    line-height: normal;
+}
+
+*::selection {
+    background-color: #FF0000;
+}
+
+body {
+    background-color: #FFFFFF;
+    animation: opens .5s linear;
+    opacity: 1;
+}
+
+@keyframes opens {
+    from {
+        margin-top: 12px;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+img {
+    user-select: none;
+}
+
+.home {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.home-banner {
+    max-width: 1200px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 120px;
+}
+
+.home-icon {
+    width: 80px;
+    height: 80px;
+    margin-top: 60px;
+}
+
+.home-panel {
+    width: 35px;
+    height: 23px;
+    margin-top: 89px;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+
+.menu {
+    width: 315px;
+    position: fixed;
+    top: 0;
+    right: -310px;
+    float: right;
+    padding: 25vh 50px;
+    background: rgba(20, 20, 20, 0.5);
+    height: 100vh;
+    backdrop-filter: blur(16px);
+    border-left: #000000 solid 8px;
+    z-index: 999;
+}
+
+.openMenu {
+    right: 0;
+    animation: openMenu .2s linear;
+}
+
+@keyframes openMenu {
+    from {
+        right: -310px;
+    }
+    to {
+        right: 0;
+    }
+}
+
+.home-panel-closes {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 60px 50px 0 0;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+
+.closeMenu {
+    right: -310px;
+    transition: all .2s linear;
+}
+
+@keyframes closeMenu {
+    from {
+        right: 0px;
+    }
+    to {
+        right: -310px;
+    }
+}
+
+.menu-title {
+    color: #FFFFFF;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #000000;
+}
+
+.menu-title img {
+    width: 28px;
+    height: 28px;
+}
+
+.list-menu {
+    margin-bottom: 50px;
+}
+
+.list-menu li {
+    margin: 25px 0;
+}
+
+.list-menu a {
+    font-size: 25px;
+    font-weight: 600;
+    border-left: 2px solid #FFFFFF;
+    padding-left: 5px;
+    transition: all .1s linear;
+}
+
+.menu-footer {
+    border-top: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    user-select: none;
+    transition: all .1s linear;
+}
+
+.home-content {
+    max-width: 1200px;
+    max-height: 302px;
+    margin: 112px 268px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-title {
+    width: 347px;
+    height: 302px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 33px;
+}
+
+.home-text-menu {
+    height: 22px;
+    margin-top: 42px;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.home-text {
+    width: 292px;
+    height: 53px;
+    font-size: 64px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.home-text:first-child {
+    margin: 0;
+}
+
+.home-contact {
+    width: 305px;
+    height: 118px
+}
+
+.home-contact a {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.home-email {
+    margin-top: 30px;
+    transition: all .1s linear;
+}
+
+.home-phone {
+    margin: 20px 0 30px;
+    transition: all .1s linear;
+}
+
+.home-sm img {
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+    transition: all .1s linear;
+}
+
+@media (hover: hover) {
+    .home-panel:hover {
+        transform: scale(.8);
+    }
+
+    .home-panel-closes:hover {
+        transform: scale(.8);
+    }
+
+    .list-menu a:hover {
+        border-left: 2px solid #000000;
+        padding-left: 10px;
+    }
+
+    .home-email:hover {
+        border-left: 2px solid #000000;
+        padding-left: 10px;
+    }
+
+    .home-phone:hover {
+        border-left: 2px solid #000000;
+        padding-left: 10px;
+    }
+
+    .home-sm img:hover {
+        transform: scale(.8);
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    
+    .home-content {
+        max-width: 1200px;
+        max-height: 500px;
+        margin: 112px 268px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 92px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .home-banner {
+        max-width: 1400px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 37px;
+    }
+    
+    .home-icon {
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+    }
+    
+    .home-panel {
+        width: 31.25px;
+        height: 20px;
+        margin-top: 26px;
+        cursor: initial;
+        transition: all .1s linear;
+    }
+
+    .menu {
+        width: 275px;
+        position: fixed;
+        top: 0;
+        right: -268px;
+        float: right;
+        padding: 25vh 30px;
+        background: rgba(20, 20, 20, 0.5);
+        height: 100vh;
+        backdrop-filter: blur(16px);
+        border-left: #000000 solid 8px;
+        z-index: 999;
+    }
+    
+    .openMenu {
+        right: 0;
+        animation: openMenu .2s linear;
+    }
+    
+    @keyframes openMenu {
+        from {
+            right: -268px;
+        }
+        to {
+            right: 0;
+        }
+    }
+    
+    .home-panel-closes {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 26px 37px 0 0;
+        cursor: initial;
+    }
+    
+    .closeMenu {
+        right: -268px;
+        transition: all .2s linear;
+    }
+    
+    @keyframes closeMenu {
+        from {
+            right: 0px;
+        }
+        to {
+            right: -268px;
+        }
+    }
+    
+    .home-content {
+        max-width: 900px;
+        max-height: 600px;
+        margin: 60px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 92px;
+    }
+    
+    .home-title {
+        width: 314px;
+        height: 262px;
+        margin: 0 37px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 6px;
+    }
+    
+    .home-text {
+        width: 234px;
+        height: 46px;
+        font-size: 46px;
+        font-weight: 700;
+        margin-top: 26px;
+    }
+    
+    .home-contact {
+        width: 250px;
+        height: 218px;
+    }
+    
+    .home-contact a {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .home-sm img {
+        width: 25.7px;
+        height: 25.7px;
+        margin-right: 20px;
+        transition: all .1s linear;
+    }
+}
